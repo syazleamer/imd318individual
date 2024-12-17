@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ameng's Biographical Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } animation: fadeIn 1s ease-in-out forwards;
+
+        body {
+            background-color: #D4D1CD;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        h1 {
+            color: #5A4D41;
+            margin-top: 30px;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        img {
+            opacity: 0;
+            animation: fadeInImage 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInImage {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .contact-form {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #958D85;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7B7167;
+            transform: scale(1.05);
+        }
+
+        .contact-details {
+            margin-top: 40px;
+            color: #5A4D41;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #BBB6B1;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            border-top: 1px solid #ccc;
+        }
+
+        footer a {
+            color: gold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<center>
+
+    <img src="imageameng/contactmeheader.png" alt="Header Contact" class="header-image">
+
+    <h1>CONTACT ME</h1>
+<br>
+
+    <div class="contact-form">
+        <form action="mailto:syazleamer66@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-details">
+        <p> <font color="black"> For direct inquiries, you can email me at: <strong><a href="mailto:syazleamer66@gmail.com">syazleamer66@gmail.com <font> </a></strong></p>
+        <p>Or call me at: <strong>017-4201338</strong></p>
+    </div>
+
+    <footer>
+        &copy; 2024 Ameng's Contact Page. Driven by Passion, Defined by Results.
+    </footer>
+
+</center>
+</body>
+</html>
