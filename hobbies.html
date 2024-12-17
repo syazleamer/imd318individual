@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Ameng's Biographical Data</title>
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #D4D1CD;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        h1 {
+            color: #5A4D41;
+            margin-top: 30px;
+            opacity: 0; 
+            animation: fadeInText 1s ease-in-out forwards; 
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeInImage 1s ease-in-out forwards;    
+     }
+
+      
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+
+              @keyframes fadeInImage {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hobbies-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            opacity: 0; 
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hobby-item {
+            text-align: center;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #958D85;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInItem 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInItem {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hobby-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .hobby-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .hobby-description {
+            margin-top: 2px;
+            color: black;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #BBB6B1;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            border-top: 1px solid #ccc;
+        }
+
+        footer a {
+            color: gold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="imageameng/headerhobbies.png" alt="Header Hobbies" class="header-image">
+
+    <h1>THINGS I LOVE TO DO !</h1>
+
+    <div class="hobbies-container">
+        <div class="hobby-item">
+
+        <video width="300" height="300" controls>  
+        <source src="videoameng/hobby1.mp4" alt="video/mp4">
+        </video> 
+
+            <h2>Playing Futsal</h2>
+            <p class="hobby-description">Futsal is pure energy—quick passes, sharp turns, and nonstop action. The tight space pushes my skills, and every goal feels like a triumph. I live for the intensity and I love to play it!.</p>
+        </div>
+
+        <div class="hobby-item">
+
+        <video width="300" height="300" controls>  
+        <source src="videoameng/hobby2.MOV" alt="video/mp4">
+        </video> 
+
+            <h2>Playing Guitar</h2>
+            <p class="hobby-description">I love playing guitar—the way the strings hum beneath my fingers, each chord bringing life to emotions. It's my escape, my voice, and my rhythm. Pure connection. I'm also do as my part time job in UiTM also external.</p>
+        </div>
+
+        <div class="hobby-item">
+
+        <video width="300" height="300" controls>  
+        <source src="videoameng/hobby3.MOV" alt="video/mp4">
+        </video> 
+
+            <h2>Swimming</h2>
+            <p class="hobby-description">I love swimming, the cool water, the weightless freedom, the rhythm of each stroke. Beneath the surface, it's calm and alive, just me and the flow. It helps me to improve better stamina.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Ameng's Biographical Data. Driven by Passion, Defined by Results. For inquiries, email <a href="emailto:syazleamer66@gmail.com">syazleamer66@gmail.com</a>
+    </footer>
+
+</body>
+</html>
